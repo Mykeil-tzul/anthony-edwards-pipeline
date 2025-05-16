@@ -2,7 +2,7 @@ name: Run Anthony Edwards Pipeline Daily
 
 on:
   schedule:
-    - cron: '0 13 * * *'  # ⏰ Runs every day at 9:00 AM EST (13:00 UTC)
+    - cron: '0 13 * * *'  # 🕒 Runs every day at 9:00 AM EST (13:00 UTC)
   workflow_dispatch:       # 🔘 Allows manual trigger in GitHub UI
 
 jobs:
@@ -16,7 +16,8 @@ jobs:
       - name: 🐍 Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10  # ✅ MUST be indented properly
+          python-version: 3.10
+          architecture: x64  # ✅ Ensures compatibility with Ubuntu 24.04
 
       - name: 📦 Install dependencies
         run: |
