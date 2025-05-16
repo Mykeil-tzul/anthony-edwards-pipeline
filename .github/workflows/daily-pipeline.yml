@@ -2,8 +2,8 @@ name: Run Anthony Edwards Pipeline Daily
 
 on:
   schedule:
-    - cron: '0 13 * * *'  # ⏰ Runs every day at 9:00 AM EST (13:00 UTC)
-  workflow_dispatch:       # 🔘 Allows manual trigger in GitHub UI
+    - cron: '0 13 * * *'
+  workflow_dispatch:
 
 jobs:
   run-pipeline:
