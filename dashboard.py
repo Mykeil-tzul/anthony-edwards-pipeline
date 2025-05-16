@@ -21,8 +21,11 @@ st.dataframe(df)
 # 🏆 Playoff Tracker Section
 st.subheader("🏆 Playoff Game Tracker")
 
-# Define playoffs (May+ games)
-df_playoffs = df[df['game_date'].str.contains("2025-05|2025-06", na=False)]
+# Ensure game_date is datetime
+df['game_date'] = pd.to_datetime(df['game_date'])
+
+# Filter playoff games based on month (May = 5, June = 6)
+df_playoffs = df[df['game_date'].dt.month.isin([5, 6])]
 
 if not df_playoffs.empty:
     st.markdown("### 🔢 Playoff Averages")
@@ -30,7 +33,6 @@ if not df_playoffs.empty:
 
     st.markdown("### 🔥 Top Playoff Games")
     st.dataframe(df_playoffs.sort_values(by='pts', ascending=False).head(5))
-
 else:
     st.info("No playoff games found in the dataset yet.")
 
@@ -42,4 +44,3 @@ st.dataframe(filtered_df)
 
 # Footer
 st.caption("Built by Mykeil Tzul • Data Pipeline + Dashboard Project")
-
