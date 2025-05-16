@@ -2,12 +2,12 @@ name: Run Anthony Edwards Pipeline Daily
 
 on:
   schedule:
-    - cron: '0 13 * * *'  # 🕒 Runs every day at 9:00 AM EST (13:00 UTC)
-  workflow_dispatch:       # 🔘 Allows manual trigger in GitHub UI
+    - cron: '0 13 * * *'  # 🕒 Every day at 9:00 AM EST (13:00 UTC)
+  workflow_dispatch:       # 🔘 Allow manual trigger
 
 jobs:
   run-pipeline:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04  # ✅ FIXED: Ubuntu version that supports Python 3.10
 
     steps:
       - name: 📥 Checkout repository
@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.10
-          architecture: x64  # ✅ Ensures compatibility with Ubuntu 24.04
+          architecture: x64
 
       - name: 📦 Install dependencies
         run: |
