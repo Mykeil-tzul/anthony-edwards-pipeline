@@ -41,7 +41,7 @@ This end-to-end pipeline:
 | Transformation   | `pandas`, `python`               |
 | Data Storage     | `DuckDB` (lightweight SQL DB)    |
 | Visualization    | `Streamlit`                      |
-| Automation Ready | `Manual Trigger`Playoffs Only`   |
+| Automation Ready | `Manual Trigger Playoffs Only`   |
 | Version Control  | `Git + GitHub`                   |
 
 ---
@@ -79,7 +79,7 @@ cd anthony-edwards-pipeline
 python3 -m venv venv
 source venv/bin/activate  # On Mac/Linux
 # or
-venv\Scripts\activate     # On Windows
+venv\Scripts\activate      # On Windows
 
 # 3. Install required packages
 pip install -r requirements.txt
@@ -89,6 +89,7 @@ python orchestrator.py
 
 # 5. Launch the dashboard
 streamlit run dashboard.py
+
 
 
 ---
