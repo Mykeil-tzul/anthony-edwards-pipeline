@@ -18,6 +18,8 @@ As a former pro basketball player and aspiring data engineer, I'm passionate abo
 
 This app is built with Python, DuckDB, and Streamlit to track Anthony Edwards' game performance — including playoffs!
 
+![Pipeline Status](https://github.com/Mykeil-tzul/anthony-edwards-pipeline/actions/workflows/daily-pipeline.yml/badge.svg)
+
 ---
 
 ## 🚀 Project Overview
