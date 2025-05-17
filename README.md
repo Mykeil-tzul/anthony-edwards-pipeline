@@ -14,7 +14,7 @@ As a former pro basketball player and aspiring data engineer, I'm passionate abo
 
 ## 🚀 Live App
 
-👉 [Click here to view the dashboard](https://mykeil-tzul-anthony-edwards-pipeline.streamlit.app)
+👉 [View the Anthony Edwards Dashboard](https://anthony-edwards-pipeline-by-mt.streamlit.app/)
 
 This app is built with Python, DuckDB, and Streamlit to track Anthony Edwards' game performance — including playoffs!
 
