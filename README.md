@@ -2,7 +2,7 @@
 
 **By: Mykeil Tzul**  
 [GitHub → Mykeil-tzul](https://github.com/Mykeil-tzul)  
-📍 Atlanta | Pro Athlete Turned Data Engineer
+📍 Atlanta | Data Engineer
 
 ---
 
@@ -14,7 +14,7 @@ As a former pro basketball player and aspiring data engineer, I'm passionate abo
 
 ## 🚀 Live App
 
-👉 [View the Anthony Edwards Dashboard](https://anthony-edwards-pipeline-by-mt.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://anthony-edwards-pipeline-by-mt.streamlit.app/)
 
 This app is built with Python, DuckDB, and Streamlit to track Anthony Edwards' game performance — including playoffs!
 
@@ -41,7 +41,7 @@ This end-to-end pipeline:
 | Transformation   | `pandas`, `python`               |
 | Data Storage     | `DuckDB` (lightweight SQL DB)    |
 | Visualization    | `Streamlit`                      |
-| Automation Ready | `schedule` or `GitHub Actions`   |
+| Automation Ready | `Manual Trigger`Playoffs Only`   |
 | Version Control  | `Git + GitHub`                   |
 
 ---
