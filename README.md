@@ -12,6 +12,12 @@ This project simulates a real-time data pipeline designed to track **Anthony Edw
 
 As a former pro basketball player and aspiring data engineer, I'm passionate about building sports-related data systems that mirror what companies like **FanDuel, PrizePicks, DraftKings, NBA, and ESPN** use in production.
 
+## 🚀 Live App
+
+👉 [Click here to view the dashboard](https://mykeil-tzul-anthony-edwards-pipeline.streamlit.app)
+
+This app is built with Python, DuckDB, and Streamlit to track Anthony Edwards' game performance — including playoffs!
+
 ---
 
 ## 🚀 Project Overview
