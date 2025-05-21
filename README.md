@@ -33,6 +33,15 @@ This end-to-end pipeline:
 
 ---
 
+## 🧠 Challenges Faced
+
+- **Real-Time Data Fetching:** Scheduling and testing live data pulls using Python required learning how to handle API timeouts and failures.
+
+- **Building with DuckDB:** As a new tool for me, DuckDB’s in-memory SQL processing was powerful but had a learning curve around file storage and schema behavior.
+
+- **Automating the Pipeline:** Implementing clean orchestration logic using Python functions and script separation taught me how to write scalable code.
+
+
 ## 🧰 Tech Stack
 
 | Layer             | Tools Used                      |
